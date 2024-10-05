@@ -1,7 +1,7 @@
 # ACT Activites
 This repository will house the activites can apply what they learned about certain cybersecurity topics. It will also include a list of resources students will need when participating in the activity
 
-## Cryptography
+## Password Cracking
 In this activity, imagine you are a hacker and you are trying to gain access to Professor Burch's personal information. Through some intense snooping, you found 5, MD5 hashes, that get used repeatdely. Using Hashcat and CUPP, you will generate a wordlist of potential passwords using his powerpoint bio as reference. Then using hashcat you will crack each of the hashes. The purpose of this excercise is to help you understand (Micahel can fill this in)
 
 ### Resources Required
@@ -47,3 +47,12 @@ nano md5.txt
 ```sh
 hashcat -m 0 -a 0 md5.txt burchPasswordWordlist.txt
 ```
+
+#### Target
+Name: Matthew Burch
+Nickname: ScratchinLeader
+Hobbies: Enjoys couponing and playing with clicker counter and collects glow in the dark cups
+Profession: Professor of Cybersecurity and eXtreme Ironer
+Place of Residence Alexandria, IN
+Majors: Spanish
+Minor: Tap
