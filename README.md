@@ -1,8 +1,8 @@
-# ACT Activites
-This repository will house the activites can apply what they learned about certain cybersecurity topics. It will also include a list of resources students will need when participating in the activity
+# ACT Activities
+This repository will house the activities that apply what they learned about certain cybersecurity topics. It will also include a list of resources students will need when participating in the activity
 
 ## Cryptography
-In this activity, imagine you are a hacker and you are trying to gain access to Professor Burch's personal information. Through some intense snooping, you found 5, MD5 hashes, that get used repeatdely. Using Hashcat and CUPP, you will generate a wordlist of potential passwords using his powerpoint bio as reference. Then using hashcat you will crack each of the hashes. The purpose of this excercise is to help you understand (Micahel can fill this in)
+In this activity, imagine you are a hacker and you want to access Professor Burch's personal information. Through some intense snooping, you found five MD5 hashes that get used repeatedly. Using Hashcat and CUPP, you will generate a wordlist of potential passwords using his PowerPoint bio as a reference. Then, using hashcat, you will crack each of the hashes. This exercise aims to help you understand what cryptography is and how it can be practically applied. 
 
 ### Resources Required
 * [Git](https://git-scm.com/downloads)
@@ -17,7 +17,7 @@ In this activity, imagine you are a hacker and you are trying to gain access to 
 pwd
 cd Desktop
 ```
-2.) Navigate to desktop using cd and using mkdir to create a CUPP folder and navigate into it
+2.) Navigate to desktop using cd and use mkdir to create a CUPP folder and navigate into it
 ```sh
 mkdir CUPP
 cd CUPP
