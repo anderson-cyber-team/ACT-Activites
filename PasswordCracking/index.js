@@ -25,7 +25,7 @@ loginBtn.addEventListener("click", async()=>{
 try{
     const snapshot = await getDocs(query(collection(db, "users",),where("password", "==", document.getElementById("password-input").value)))
     if(snapshot.docs.length == 1){
-      window.location.href = "http://127.0.0.1:5500/Cryptography/landing-page.html";
+      window.location.href = "http://127.0.0.1:5500/PasswordCracking/landing-page.html";
     }
     else{
       alert("Login credentials are incorrect!")
