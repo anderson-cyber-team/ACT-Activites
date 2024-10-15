@@ -21,7 +21,7 @@ password = input("Enter password: ")
 cipher = input(
     "Which cipher did you use to encrypt the password Caesar(1) or Vigener(2): "
 )
-if cipher == 1:
+if int(cipher) == 1:
     key = input("What was the key used: ")
     password = decrypt_vigenere(password, str(key))  # missing key
 else:

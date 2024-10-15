@@ -31,10 +31,12 @@ print("Below are two example ciphers you can use.")
 cipher = input("Which cipher do you want to select Caesar(1) or Vigenere(2)")
 
 # Encrypt the password with your choice of cipher
-if cipher == 1:
-    password = encrypt_vigenere(password, "")  # missing text
+if int(cipher) == 1:
+    key = input("What is the key you want to use: ")
+    password = encrypt_vigenere(password, str(key))  # missing text
 else:
-    password = encrypt_caesar(password, 0)  # missing shift value
+    shift = input("What is the shift: ")
+    password = encrypt_caesar(password, int(shift))  # missing shift value
 
 # Encrypt message
 cipher_message = encrypter(message, password)
