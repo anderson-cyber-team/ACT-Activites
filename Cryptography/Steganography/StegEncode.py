@@ -1,5 +1,5 @@
 # StegEncode.py
-# DESCRIPTION: This script enables the concealment of a message within the least 
+# DESCRIPTION: This script enables the concealment of a message within the least
 # significant bits of a selected image using steganography.
 
 # Import statements
@@ -7,6 +7,8 @@ from PIL import Image
 from cryptography.fernet import Fernet
 import hashlib
 from base64 import urlsafe_b64encode
+from ciphers import encrypt_caesar, encrypt_vigenere
+
 
 def encrypter(plaintext, password):
     # Generate hash from password, convert to string
@@ -15,15 +17,20 @@ def encrypter(plaintext, password):
     key = urlsafe_b64encode(hash.encode())
     token = Fernet(key)
     ciphertext = token.encrypt(plaintext.encode())
-    #print(ciphertext)
+    # print(ciphertext)
     return ciphertext.decode()
 
-# Counter variable
-i=0
 
-# Prompt the user for the message 
+# Counter variable
+i = 0
+
+# Prompt the user for the message
 message = input("Message to encode: ")
 password = input("Password to encrypt: ")
+
+# Encrypt the password with your choice of cipher
+password = encrypt_vigenere(password, "")  # missing text
+password = encrypt_caesar(password, 0)  # missing shift value
 
 # Encrypt message
 cipher_message = encrypter(message, password)
@@ -36,10 +43,9 @@ data = bin(int(len(cipher_message)))[2:].zfill(16) + message_bin
 with Image.open("dyr.png") as img:
     width, height = img.size
 
-    # Nested loop to target every pixel in the image 
+    # Nested loop to target every pixel in the image
     for x in range(0, width):
         for y in range(0, height):
-
             # Obtain the RGB values at each location
             pixel = list(img.getpixel((x, y)))
 
