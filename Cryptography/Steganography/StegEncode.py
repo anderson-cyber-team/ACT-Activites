@@ -27,10 +27,14 @@ i = 0
 # Prompt the user for the message
 message = input("Message to encode: ")
 password = input("Password to encrypt: ")
+print("Below are two example ciphers you can use.")
+cipher = input("Which cipher do you want to select Caesar(1) or Vigenere(2)")
 
 # Encrypt the password with your choice of cipher
-password = encrypt_vigenere(password, "")  # missing text
-password = encrypt_caesar(password, 0)  # missing shift value
+if cipher == 1:
+    password = encrypt_vigenere(password, "")  # missing text
+else:
+    password = encrypt_caesar(password, 0)  # missing shift value
 
 # Encrypt message
 cipher_message = encrypter(message, password)

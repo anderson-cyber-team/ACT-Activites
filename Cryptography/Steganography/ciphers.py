@@ -42,6 +42,3 @@ def decrypt_vigenere(cipher_text, key):
         plain_text.append(chr((ct_num + 65 - shift) % 26 + 65))
 
     return "".join(plain_text)
-
-
-print(decrypt_vigenere("QKPEHMPHKEW", "day"))

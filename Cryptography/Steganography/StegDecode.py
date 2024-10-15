@@ -18,8 +18,15 @@ extracted_bin = []
 password = input("Enter password: ")
 
 # Decrypt the password using a cipher you and partner agreed on
-password = decrypt_vigenere(password, "")  # missing key
-password = decrypt_caesar(password, 0)  # missing the shift
+cipher = input(
+    "Which cipher did you use to encrypt the password Caesar(1) or Vigener(2): "
+)
+if cipher == 1:
+    key = input("What was the key used: ")
+    password = decrypt_vigenere(password, str(key))  # missing key
+else:
+    shift = input("What was the shift used: ")
+    password = decrypt_caesar(password, int(shift))  # missing the shift
 
 
 def decrypter(ciphertext, password):
