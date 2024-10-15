@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
-      - run: pip install black
+      - run: python -m pip install black
+      - run: npm install prettier
       - run: python -m black .
       - run: npx prettier .
