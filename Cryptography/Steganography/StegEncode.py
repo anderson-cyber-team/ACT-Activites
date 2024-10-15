@@ -28,7 +28,7 @@ i = 0
 message = input("Message to encode: ")
 password = input("Password to encrypt: ")
 print("Below are two example ciphers you can use.")
-cipher = input("Which cipher do you want to select Caesar(1) or Vigenere(2)")
+cipher = input("Which cipher do you want to select Vigenere(1) or Caesar(2)")
 
 # Encrypt the password with your choice of cipher
 if int(cipher) == 1:

@@ -19,7 +19,7 @@ password = input("Enter password: ")
 
 # Decrypt the password using a cipher you and partner agreed on
 cipher = input(
-    "Which cipher did you use to encrypt the password Caesar(1) or Vigener(2): "
+    "Which cipher did you use to encrypt the password Vigenere(1) or Caesar(2): "
 )
 if int(cipher) == 1:
     key = input("What was the key used: ")
