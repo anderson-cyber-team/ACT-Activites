@@ -23,10 +23,10 @@ cipher = input(
 )
 if int(cipher) == 1:
     key = input("What was the key used: ")
-    password = decrypt_vigenere(password, str(key))  # missing key
+    password = decrypt_vigenere(password, str(key))
 else:
     shift = input("What was the shift used: ")
-    password = decrypt_caesar(password, int(shift))  # missing the shift
+    password = decrypt_caesar(password, int(shift))
 
 
 def decrypter(ciphertext, password):

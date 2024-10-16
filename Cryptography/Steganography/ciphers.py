@@ -23,10 +23,14 @@ def encrypt_vigenere(plain_text, key):
     key = key.lower().ljust(len(plain_text))
 
     for pt_char, k_char in zip(plain_text, key):
-        pt_num = ord(pt_char.upper())
-        k_num = ord(k_char)
-        shift = k_num - 65  # ASCII value of 'A'
-        cipher_text.append(chr((pt_num - 65 + shift) % 26 + 65))
+        shift = ord(k_char) - ord("a")
+        if pt_char.isalpha():
+            ascii_offset = ord("a") if pt_char.islower() else ord("A")
+            cipher_text.append(
+                chr((ord(pt_char) - ascii_offset + shift) % 26 + ascii_offset)
+            )
+        else:
+            cipher_text.append(pt_char)
 
     return "".join(cipher_text)
 
@@ -36,9 +40,13 @@ def decrypt_vigenere(cipher_text, key):
     key = key.lower().ljust(len(cipher_text))
 
     for ct_char, k_char in zip(cipher_text, key):
-        ct_num = ord(ct_char.upper())
-        k_num = ord(k_char)
-        shift = k_num - 65  # ASCII value of 'A'
-        plain_text.append(chr((ct_num + 65 - shift) % 26 + 65))
+        shift = ord(k_char) - ord("a")
+        if ct_char.isalpha():
+            ascii_offset = ord("a") if ct_char.islower() else ord("A")
+            plain_text.append(
+                chr((ord(ct_char) - ascii_offset - shift) % 26 + ascii_offset)
+            )
+        else:
+            plain_text.append(ct_char)
 
     return "".join(plain_text)
