@@ -35,10 +35,10 @@ cipher_message = encrypter(message, password)
 
 # Encrypt the password with your choice of cipher
 if int(cipher) == 1:
-    key = input("What is the key you want to use: ")
+    key = input("What is the key you want to use(i.e day or blah): ")
     print("Here is the encrypted password: ", encrypt_vigenere(password, str(key)))
 else:
-    shift = input("What is the shift: ")
+    shift = input("What is the shift(i.e. 3 or 16) it must be in range of 0 - 25: ")
     print("Here is the encrypted password: ", encrypt_caesar(password, int(shift)))
 
 # Convert the message to binary and add a byte(s) at the beginning to indicate how long the message is
