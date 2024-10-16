@@ -50,3 +50,5 @@ def decrypt_vigenere(cipher_text, key):
             plain_text.append(ct_char)
 
     return "".join(plain_text)
+
+# Add your own cipher here
