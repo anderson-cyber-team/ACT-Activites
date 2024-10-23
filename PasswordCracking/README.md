@@ -6,6 +6,14 @@
 * CUPP
 * Hashcat (Comes pre-installed with Linux)
 
+### Install requirements.txt
+```sh
+python -m pip install -r requirements.txt
+```
+```sh
+python3 -m pip install -r requirements.txt
+```
+
 ### How to install CUPP
 
 1.) Make sure your current working directory is Desktop
@@ -44,6 +52,20 @@ nano md5.txt
 ```sh
 hashcat -m 0 -a 0 md5.txt burchPasswordWordlist.txt
 ```
+
+### How to run site locally
+1.) Navigate to the PasswordCracking directory
+```sh
+cd PasswordCracking
+```
+2.) Run App depending on python type
+```sh
+npm run app
+```
+```sh
+npm run app3
+```
+3.) Click Link and you should be navigated to the index.html login page
 
 ### Target
 Name: Matthew Burch
