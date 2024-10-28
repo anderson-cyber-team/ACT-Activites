@@ -55,7 +55,7 @@ touch md5.txt
 nano md5.txt
 ```
 
-(assets/image.png)
+[Nano Text Editor Picture](assets/image.png)
 
 3.) In this file you will input a hash and then press Ctrl+s and Crtl+x
 
