@@ -9,6 +9,25 @@
 
 ### Install requirements.txt
 
+Create a python environment in the Password Cracking directory
+```sh
+cd path/to/PasswordCracking
+python -m venv venv
+```
+
+or
+
+```sh
+python3 -m venv venv
+```
+
+Activate it
+```sh
+source myenv/bin/activate
+```
+
+Depending on python type follow the install steps
+
 ```sh
 python -m pip install -r requirements.txt
 ```
