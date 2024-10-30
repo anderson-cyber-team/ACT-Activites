@@ -10,6 +10,7 @@
 ### Install requirements.txt
 
 Create a python environment in the Password Cracking directory
+
 ```sh
 cd path/to/PasswordCracking
 python -m venv venv
@@ -22,6 +23,7 @@ python3 -m venv venv
 ```
 
 Activate it
+
 ```sh
 source myenv/bin/activate
 ```
