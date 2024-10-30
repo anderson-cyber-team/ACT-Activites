@@ -55,7 +55,13 @@ cd cupp
 3.) Run the CUPP interface
 
 ```sh
-python3 cupp.py
+python -m cupp -i
+```
+
+or
+
+```sh
+python3 -m cupp -i
 ```
 
 4.) Will input information as instructed on CUPP interface
