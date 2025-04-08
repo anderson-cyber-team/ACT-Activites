@@ -1,0 +1,88 @@
+REM Bart simpson left his computer unattended, big mistake
+DELAY 1000
+GUI r
+DELAY 1000
+STRING notepad
+ENTER
+DELAY 1000
+STRING                                       @@@@@@     @ @        @@ @@                             
+ENTER
+STRING                                           @@     @ @      @ @@@@ @@@                          
+ENTER
+STRING                                          @@@ @@@@@ @   @ @ @@@@@@ @ @             @@@@@@@@@@@ 
+ENTER
+STRING                                          @@@ @  @@ @   @ @@@@@@@@@@                @@@@@@@@@@ 
+ENTER
+STRING                                          @@@@ @@   @   @@@ @@@ @@ @              @@@@@@@@@@@@ 
+ENTER
+STRING                                          @@@@ @@   @       @ @     @             @@@          
+ENTER
+STRING                                          @@@@ @@   @       @ @ @@                @@@          
+ENTER
+STRING                                          @@@@  @@  @       @@@ @@                @@@          
+ENTER
+STRING                                          @@@@  @@  @                             @@@          
+ENTER
+STRING                                   @@@@   @@@ @@  @ @                             @@@          
+ENTER
+STRING                                  @@@@@@@@@@@     @ @                              @@@@@@@@@@@ 
+ENTER
+STRING                                  @@@ @@@@@@      @ @                   @           @@@@@@@@@@ 
+ENTER
+STRING                                  @@       @      @ @                  @                       
+ENTER
+STRING                                  @@      @@@     @ @                  @                       
+ENTER
+STRING                                 @@@@     @ @     @ @                                          
+ENTER
+STRING                                @@@@    @@@@@     @ @                                          
+ENTER
+STRING                                 @@    @ @@@@     @ @                                          
+ENTER
+STRING                                 @@@@@@  @@@@     @ @                                          
+ENTER
+STRING                                @@ @@@@@@ @ @     @ @                                          
+ENTER
+STRING                               @@@@@@@@      @    @ @                                          
+ENTER
+STRING                             @@@@@ @@@@      @    @ @@      @@                                 
+ENTER
+STRING         @@@@@@@@@@@@@@@@@@@@@@@  @@         @@ @    @@@@@@@ @                                 
+ENTER
+STRING @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      @@     @@@   @  @ @@@@@ @                                 
+ENTER
+STRING @@@@@@@@@      @@@       @@                 @@@  @  @      @                                  
+ENTER
+STRING          @@                           @@   @@ @  @  @                                         
+ENTER
+STRING                                      @@@    @ @@@                                             
+ENTER
+STRING                                    @    @@@  @ @                                              
+ENTER
+STRING                                     @@@@@ @@ @@@                            @@@@              
+ENTER
+STRING                       @@@@@@@@               @@                         @@@@@@@@@@@@@@@@@@@@@ 
+ENTER
+STRING                @@@@@@@@@@@                                          @@@@@@@@@@@@@@@@@@@@@@@   
+ENTER
+STRING      @  @@    @  @                                                 @  @@                 @@@  
+ENTER
+STRING @@@            @                                                   @                   @@@    
+ENTER
+STRING         @@     @@                                         @@@@@@@@@@                        @ 
+ENTER
+STRING  @             @@                                      @@@@@@@@@@@@@@                       @ 
+ENTER
+STRING                @@                                   @@  @@                          @         
+ENTER
+STRING                @@                                @@@@@@ @                       @@@           
+ENTER
+STRING                @@                                                              @@@    @       
+ENTER
+VAR $FOO = 5
+WHILE ( $FOO  > 0)
+    STRING I will not leave my computer unattended
+    ENTER
+    $FOO = ( $FOO - 1 )
+END_WHILE
+STRING I will not leav
