@@ -1,0 +1,19 @@
+REM These next few lines will download and open a picture of Obama
+DELAY 5000
+GUI r
+DELAY 1000
+STRING cmd
+DELAY 500
+ENTER
+DELAY 5000
+STRING cd ./Downloads
+DELAY 500
+ENTER
+DELAY 500
+STRING curl https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg -o obama.jpg
+DELAY 500
+ENTER
+DELAY 5000
+STRING obama.jpg
+DELAY 500
+ENTER
