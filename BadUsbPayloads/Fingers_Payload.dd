@@ -1,0 +1,10 @@
+REM Force Shutdown a computer
+DELAY 1000
+GUI r
+DELAY 1000
+STRING cmd
+DELAY 500
+ENTER
+DELAY 2000
+STRING shutdown /f
+ENTER
